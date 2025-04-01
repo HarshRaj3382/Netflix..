@@ -1,12 +1,110 @@
-# React + Vite
+# Netflix GPT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Netflix GPT is an AI-powered movie recommendation application built with **React**, **TailwindCSS**, **Redux**, and **Firebase**. It integrates **TMDB API** and **OpenAI API** to provide smart movie suggestions based on user queries.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🔐 Authentication
+- **Login/Sign Up** (Firebase Authentication)
+- **Form Validation**
+- **Sign In / Sign Up Form**
+- **Sign Out Functionality**
+- **Update Profile**
 
-## Expanding the ESLint configuration
+### 🎬 Movie Browsing
+- **Browse Movies** (After Authentication)
+- **Now Playing Movies List** (Fetched from TMDB API)
+- **Movie Details & Trailer** (Embedded YouTube Video Autoplay & Mute)
+- **Dynamic Movie Lists** (Using TMDB API)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🤖 Netflix GPT (AI-Powered Search)
+- **Search Bar** for Movie Suggestions
+- **Gpt Search API Call**
+- **TMDB Movie Suggestions Based on GPT Query**
+- **Multi-language Support** (BONUS Feature)
+
+### 🛠️ Additional Features
+- **Redux Store** with userSlice and movieSlice
+- **Custom Hooks** (Now Playing Movies, Popular Movies)
+- **Environment Variables (.env support)**
+- **Made the Website Fully Responsive**
+- **Optimized Performance with Memoization**
+
+---
+
+## 🏗️ Project Setup
+
+### 1️⃣ Prerequisites
+Before running the project, create a **.env** file and add your API keys:
+```plaintext
+REACT_APP_TMDB_API_KEY=your_tmdb_api_key
+REACT_APP_OPENAI_API_KEY=your_openai_api_key
+
+
+
+2️⃣ Installation & Running Locally
+
+# Clone the repository
+git clone https://github.com/yourusername/netflix-gpt.git
+cd netflix-gpt
+
+# Install dependencies
+yarn install  # or npm install
+
+# Start the development server
+yarn start  # or npm start
+
+
+3️⃣ Deployment
+yarn build  # or npm run build
+
+
+
+📂 Project Structure
+Netflix-GPT/
+│── src/
+│   ├── components/
+│   ├── hooks/
+│   ├── redux/
+│   ├── pages/
+│   ├── utils/
+│   ├── App.js
+│   ├── index.js
+│── public/
+│── .env
+│── package.json
+│── README.md
+
+
+
+
+🛠️ Tech Stack
+React (Frontend)
+
+TailwindCSS (Styling)
+
+Firebase (Authentication & Hosting)
+
+TMDB API (Movie Database)
+
+OpenAI API (AI-Powered Recommendations)
+
+Redux (State Management)
+
+
+🐞 Bug Fixes & Improvements
+✅ Fixed Sign Up User Display Name & Profile Picture Update issue
+✅ Redirected users to Login Page if not authenticated
+✅ Unsubscribed onAuthStateChanged callback for better performance
+✅ Hardcoded values moved to constants file for maintainability
+✅ Optimized API Calls & Performance using memoization
+
+
+🚀 Future Enhancements
+Add Watchlist & Favorites functionality
+
+Implement Dark Mode
+
+Improve GPT Search Accuracy
+
+Add Trending Movies Section
