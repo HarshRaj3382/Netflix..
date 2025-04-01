@@ -1,0 +1,6 @@
+
+/* Reset some basic defaults for the body */
+html, body {
+    height: auto;  /* Allow content to exceed the viewport height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
