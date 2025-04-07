@@ -39,7 +39,7 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute w-screen px-8 py-4 bg-gradient-to-b from-black via-gray-5 to-transparent z-10 flex items-center justify-between">
+    <div className="absolute w-screen px-5 py-2 bg-gradient-to-b from-black via-gray-5 to-transparent z-10 flex items-center justify-between z-20">
       {/* Logo */}
       <img src={LOGO} alt="logo" className="w-50 md:w-44 cursor-pointer" />
 

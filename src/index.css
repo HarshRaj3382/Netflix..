@@ -14,4 +14,12 @@ html {
 body {
   min-height: 100%; /* Ensure body also takes full height */
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 @import "tailwindcss";
