@@ -73,7 +73,7 @@ const MovieList = ({ title, movies }) => {
 
   return (
     <div className="relative"> 
-      <h1 className="text-3xl font-semibold mb-4 text-white absolute top-0 left-4">{title}</h1>
+      <h1 className="text-3xl font-semibold mb-4 text-white absolute top-0 left-4 ml-15 pb-5 ">{title}</h1>
 
       <div className="flex items-center">
         <button 
